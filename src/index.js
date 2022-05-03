@@ -19,7 +19,13 @@ const user = {
     firstName:'Nishant',
     lastName:'Shaligram'
 };
-const element = getGreeting(user);
+const element = React.createElement(
+    'div',
+    {
+        className:'greeting',
+        children: getGreeting(user)
+    }
+);
 root.render(element);
 
 
