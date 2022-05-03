@@ -28,6 +28,11 @@ const element = React.createElement(
 );
 root.render(element);
 
+const root2 = ReactDOM.createRoot(
+    document.getElementById('root2')
+);
+const element2 = <h2>Hello, I am root2 element.</h2>
+root2.render(element2);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
